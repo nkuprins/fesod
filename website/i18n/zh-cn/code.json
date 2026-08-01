@@ -8,6 +8,12 @@
   "github": {
     "message": "GitHub"
   },
+  "homepage.playground.hint": {
+    "message": "每个 @ExcelProperty 对应一个列标题。"
+  },
+  "homepage.playground.sheet.caption": {
+    "message": "Fesod 依据左侧类写出的电子表格"
+  },
   "homepage.feature.quick.title": {
     "message": "快速"
   },

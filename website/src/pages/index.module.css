@@ -113,6 +113,37 @@
     z-index: 2;
 }
 
+.heroDemo {
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 997px) {
+    .heroBanner {
+        padding: 4.5rem 0;
+    }
+
+    /* The demo is the densest thing on the page, so the hero opts out of the
+       1140px content width the rest of the page uses and gives it room. */
+    .heroContent {
+        --ifm-container-width: 1280px;
+        --ifm-container-width-xl: 1280px;
+
+        display: grid;
+        grid-template-columns: minmax(0, 4.5fr) minmax(0, 7.5fr);
+        gap: 3rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .heroCopy .buttons {
+        justify-content: flex-start;
+    }
+
+    .heroDemo {
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 996px) {
     .colLabels,
     .rowLabels {

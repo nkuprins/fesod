@@ -8,6 +8,12 @@
   "github": {
     "message": "GitHub"
   },
+  "homepage.playground.hint": {
+    "message": "Every @ExcelProperty becomes a column header."
+  },
+  "homepage.playground.sheet.caption": {
+    "message": "The spreadsheet Fesod writes from the class beside it"
+  },
   "homepage.feature.quick.title": {
     "message": "High-performance"
   },
