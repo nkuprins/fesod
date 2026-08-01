@@ -58,3 +58,64 @@
     width: 20px;
     height: 20px;
 }
+
+.gridOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+.colLabels,
+.rowLabels {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    font-family: var(--ifm-font-family-monospace, monospace);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.22);
+}
+
+.colLabels {
+    top: 8px;
+    left: 0;
+    height: 16px;
+}
+
+.colLabels span {
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.rowLabels {
+    top: 0;
+    left: 8px;
+    width: 16px;
+}
+
+.rowLabels span {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 996px) {
+    .colLabels,
+    .rowLabels {
+        display: none;
+    }
+}
